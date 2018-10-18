@@ -1,8 +1,37 @@
 
-# Supervised Learning
-## Project: Finding Donors for CharityML
+# Project: Finding Donors for CharityML
+## Category: Supervised Learning
 
-### Install
+
+### Project Overview
+
+In this project, I applied supervised learning techniques on data collected for the U.S. census to help CharityML (a fictitious charity organization) identify people most likely to donate to their cause.
+
+I first explored the data to learn how the census data is recorded. Next, I applied a series of transformations and preprocessing techniques to manipulate the data into a workable format. Then I evaluated three types of supervised learners (Random Forest, SVMs, and Logistic Regression) on the data, compared performances, and chose one of those models with a reasonable explanation. Afterwards, I optimized the model and present it as my solution to CharityML. Finally, I explored the chosen model and its predictions under the hood, to see just how well it's performing when considering the data it's given.
+
+### Setting
+
+CharityML is a fictitious charity organization located in the heart of Silicon Valley that was established to provide financial support for people eager to learn machine learning. After nearly 32,000 letters were sent to people in the community, CharityML determined that every donation they received came from someone that was making more than $50,000 annually. To expand their potential donor base, CharityML has decided to send letters to residents of California, but to only those most likely to donate to the charity. My goal is to build an algorithm to best identify potential donors for the charity, and help them raise funds effectively with reducing overhead cost of sending mail.
+
+### Techniques
+
+- Data preprossessing
+  - Transforming skewed continuous features using logarithm
+  - Normalization (scaling)
+  - One-hot encoding
+- Model evaluation
+  - Accuracy
+  - Recall and precision
+  - F-beta score
+- Supervised learning models
+  - Random Forest
+  - Support Vector Machines
+  - Logistic Regression
+- Model optimization by tuning hyperparameters
+- How to train and test a supervised learning model
+- Feature selection
+
+### Libraries
 
 This project requires **Python 3.x** and the following Python libraries installed:
 
@@ -11,27 +40,14 @@ This project requires **Python 3.x** and the following Python libraries installe
 - [matplotlib](http://matplotlib.org/)
 - [scikit-learn](http://scikit-learn.org/stable/)
 
-You will also need to have software installed to run and execute an [iPython Notebook](http://ipython.org/notebook.html)
+This project runs on the [Jupyter Notebook](http://ipython.org/notebook.html)
 
-We recommend students install [Anaconda](https://www.continuum.io/downloads), a pre-packaged Python distribution that contains all of the necessary libraries and software for this project. 
+### files
 
-### Code
-
-Template code is provided in the `finding_donors.ipynb` notebook file. You will also be required to use the included `visuals.py` Python file and the `census.csv` dataset file to complete your work. While some code has already been implemented to get you started, you will need to implement additional functionality when requested to successfully complete the project. Note that the code included in `visuals.py` is meant to be used out-of-the-box and not intended for students to manipulate. If you are interested in how the visualizations are created in the notebook, please feel free to explore this Python file.
-
-### Run
-
-In a terminal or command window, navigate to the top-level project directory `finding_donors/` (that contains this README) and run one of the following commands:
-
-```bash
-ipython notebook finding_donors.ipynb
-```  
-or
-```bash
-jupyter notebook finding_donors.ipynb
-```
-
-This will open the iPython Notebook software and project file in your browser.
+- `finding_donors.ipynb`: Jupyter notebook, This project's main file
+- `census.csv`: CSV file, The project data file
+- `visuals.py`: Python, visualization code
+- `finding_donors.html`: HTML, Output of the project (for submission)
 
 ### Data
 
@@ -54,3 +70,8 @@ The modified census dataset consists of approximately 32,000 data points, with e
 
 **Target Variable**
 - `income`: Income Class (<=50K, >50K)
+
+
+### Note
+
+This project has been done as a part of Machine Learning Engineer Nanodegree program, at [Udacity](https://www.udacity.com/).
