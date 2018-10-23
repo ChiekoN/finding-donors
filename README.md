@@ -42,7 +42,7 @@ This project requires **Python 3.x** and the following Python libraries installe
 
 This project runs on the [Jupyter Notebook](http://ipython.org/notebook.html)
 
-### files
+### Files
 
 - `finding_donors.ipynb`: Jupyter notebook, This project's main file
 - `census.csv`: CSV file, The project data file
